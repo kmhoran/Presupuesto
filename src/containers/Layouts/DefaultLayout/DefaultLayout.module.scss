@@ -1,0 +1,14 @@
+
+.body{
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 50px);
+    width: 100vw;
+}
+.menuLeft{
+    height: 100%;
+}
+.content{
+    flex: 1;
+    height: 100%;
+}

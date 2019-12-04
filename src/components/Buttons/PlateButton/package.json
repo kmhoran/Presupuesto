@@ -1,0 +1,6 @@
+{
+    "name": "PlateButton",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./PlateButton.tsx"
+}

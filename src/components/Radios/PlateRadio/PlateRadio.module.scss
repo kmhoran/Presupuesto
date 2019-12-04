@@ -1,0 +1,46 @@
+@import "../../../colors.scss";
+@import "../../../common-ui.scss";
+
+.root {
+  outline: none !important;
+  cursor: pointer;
+}
+
+.input {
+  position: absolute;
+  visibility: hidden;
+}
+.label {
+  position: relative;
+  cursor: pointer;
+  margin: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 9999px;
+  font-weight: 700;
+  color: $text500;
+  user-select: none;
+}
+.selected {
+  @extend .plate-ui;
+  border: none;
+  color: $text900;
+  font-weight: 700;
+  user-select: none;
+  padding: 10px;
+  border-radius: 9999px;
+  background-position: center;
+  transition: all 0.4s;
+}
+
+// .selected:hover {
+//   color: $plate-ui-background;
+//   background: $text700 radial-gradient(circle, transparent 1%, $text700 1%)
+//     center/15000%;
+// }
+
+// .selected:active {
+//   background-color: $plate-ui-background;
+//   background-size: 100%;
+//   transition: background 0s;
+// }

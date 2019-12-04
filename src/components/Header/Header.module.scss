@@ -1,0 +1,46 @@
+@import '../../colors.scss';
+.root{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    height: 40px;
+}
+
+.logoSpace {
+    margin-left: 50px;
+}
+.accountSpace {
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    .accountPictureFrame{
+        height: 30px;
+        width: 30px;
+        border-radius: 99999px;
+        border: 2px solid #fff;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .accountPicture{
+        height: 100%;
+
+    }
+    .profileName{
+        font-size: .8em;
+        color: $text500;
+    }
+}
+
+.logo{
+    width: 30px;
+}

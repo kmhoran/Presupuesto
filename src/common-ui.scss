@@ -1,0 +1,9 @@
+@import './colors.scss';
+$plate-ui-background: #ecedfa;
+.plate-ui{
+    border-radius: 30px;
+    padding: 30px;
+    background-color: $plate-ui-background;
+    box-shadow: 5px 10px 20px rgba($color: $text700, $alpha: 0.2);
+    margin: 15px;
+}

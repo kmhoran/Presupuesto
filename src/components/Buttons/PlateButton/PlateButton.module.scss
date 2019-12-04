@@ -1,0 +1,26 @@
+@import "../../../colors.scss";
+@import "../../../common-ui.scss";
+
+.root {
+  @extend .plate-ui;
+  border: none;
+  color: $text700;
+  font-weight: 700;
+  user-select: none;
+  padding: 10px;
+  border-radius: 9999px;
+  background-position: center;
+  transition: all 0.4s;
+}
+
+.root:hover {
+  color: $plate-ui-background;
+  background: $text700 radial-gradient(circle, transparent 1%, $text700 1%)
+    center/15000%;
+}
+
+.root:active {
+  background-color: $plate-ui-background;
+  background-size: 100%;
+  transition: background 0s;
+}

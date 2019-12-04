@@ -1,0 +1,6 @@
+{
+    "name": "PlateRadio",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./PlateRadio.tsx"
+}

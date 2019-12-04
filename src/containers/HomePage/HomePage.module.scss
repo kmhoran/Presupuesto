@@ -1,0 +1,23 @@
+@import '../../colors.scss';
+.root {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  flex-direction: column;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+.title {
+  color: $text700;
+}
+.datePicker{
+  // align-items: flex-start;
+  margin-bottom: 50px;
+  width: 100%;
+}
