@@ -13,31 +13,31 @@ interface IState {}
 const menuItems: IMenuItem[] = [
   {
     name: "Dashboard",
-    to: "#",
     icon: () => <h1>D</h1>,
     id: "dashboard",
-    selected: true
+    selected: true,
+    to: '/'
   },
   {
     name: "Transactions",
-    to: "#",
     icon: () => <h1>T</h1>,
     id: "transacrions",
-    selected: false
+    selected: false,
+    to: 'transactions'
   },
   {
     name: "Messages",
-    to: "#",
     icon: () => <h1>M</h1>,
     id: "messages",
-    selected: false
+    selected: false,
+    to:'/messages'
   },
   {
     name: "Reports",
-    to: "#",
     icon: () => <h1>R</h1>,
     id: "reports",
-    selected: false
+    selected: false,
+    to: '/reports'
   }
 ];
 

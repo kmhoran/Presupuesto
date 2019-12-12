@@ -1,0 +1,6 @@
+{
+    "name": "TransactionPage",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./TransactionPage.tsx"
+}
