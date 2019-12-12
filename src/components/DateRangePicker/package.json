@@ -1,6 +1,0 @@
-{
-    "name": "DateRangePicker",
-    "version": "0.0.0",
-    "private": true,
-    "main": "./DateRangePicker.tsx"
-}

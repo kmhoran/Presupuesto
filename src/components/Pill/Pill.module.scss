@@ -1,0 +1,11 @@
+@import "../../colors.scss";
+@import "../../common-ui.scss";
+
+.root {
+  padding: 5px;
+  border-radius: 9999px;
+  background-color: $paleLime;
+  color: #fff;
+  width: 50px;
+  text-align: center;
+}

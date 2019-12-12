@@ -5,19 +5,50 @@
   align-items: flex-start;
   height: 100%;
   flex-direction: column;
+  width: calc(100%-15px);
 }
 
 .content{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 }
 .title {
   color: $text700;
 }
 .datePicker{
-  // align-items: flex-start;
   margin-bottom: 50px;
   width: 100%;
+}
+.homeRow{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.topLeft{
+  flex: 4;
+}
+.topRight{
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  color: $text700;
+  .amountToSpendBar{
+    display: flex;
+    flex-direction: row;
+    // border: 1px solid red;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .amountToSpend{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .amountToSpendValue{
+    font-size: 3.5em;
+  }
+  .pill{
+    margin-top: 5px;
+  }
 }

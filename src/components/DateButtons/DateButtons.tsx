@@ -1,15 +1,14 @@
 import React, { Component } from "react";
-import s from "./DateRangePicker.module.scss";
+import s from "./DateButtons.module.scss";
 import cx from "classnames";
-import PlateRadio from "../Radios/PlateRadio";
+import PlateRadio from "../inputs/Radios/PlateRadio/PlateRadio";
 import { find } from "lodash";
 
 const options: IRadio.IOption[] = [
   {
     id: "1",
     label: "All Time",
-    value: "all",
-    defaultChecked: true
+    value: "all"
   },
   {
     id: "2",
@@ -19,17 +18,13 @@ const options: IRadio.IOption[] = [
   {
     id: "3",
     label: "This Month",
-    value: "month"
-  },
-  {
-    id: "4",
-    label: "Today",
-    value: "day"
+    value: "month",
+    defaultChecked: true
   }
 ];
 
 interface IProps {
-  onChange?(option?: IRadio.IOption):any;
+  onChange?(option?: IRadio.IOption): any;
   className: string;
 }
 
@@ -38,12 +33,14 @@ interface IState {
   selectedId: string;
 }
 
-class DateRangePicker extends Component<IProps, IState> {
+class DateButtons extends Component<IProps, IState> {
   constructor(props: IProps) {
     super(props);
+    const seleted = (find(options, x => x.defaultChecked) ||
+      {}) as IRadio.IOption;
     this.state = {
       options,
-      selectedId: "1"
+      selectedId: seleted.id
     };
   }
 
@@ -69,4 +66,4 @@ class DateRangePicker extends Component<IProps, IState> {
     );
   }
 }
-export default DateRangePicker;
+export default DateButtons;
