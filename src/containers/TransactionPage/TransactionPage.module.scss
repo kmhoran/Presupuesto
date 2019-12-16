@@ -5,7 +5,8 @@
   align-items: flex-start;
   height: 100%;
   flex-direction: column;
-  width: calc(100%-15px);
+  width: 100%;
+  margin: 0;
 }
 
 .content{
@@ -50,5 +51,17 @@
   }
   .pill{
     margin-top: 5px;
+  }
+}
+
+.tableFrame{
+  // margin: 0;
+}
+.table{
+  width: 100%;
+  .heading{
+    color: $text500;
+    text-transform: uppercase;
+    font-size: 0.9em;
   }
 }

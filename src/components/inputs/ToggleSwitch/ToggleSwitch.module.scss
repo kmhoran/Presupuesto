@@ -1,10 +1,12 @@
 @import "../../../colors.scss";
+@import "../../../common-ui.scss";
 $height: 25px;
+$margin: 3px;
 
 .switch {
     position: relative;
     display: inline-block;
-    width: ($height * 2) - 8px;
+    width: ($height * 2) - ($margin *2);
     height: $height;
   }
   
@@ -29,11 +31,11 @@ $height: 25px;
   .slider:before {
     position: absolute;
     content: "";
-    height: $height - 8px;
-    width: $height - 8px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
+    height: $height - ($margin *2);
+    width: $height - ($margin *2);
+    left: $margin;
+    bottom: $margin;
+    background-color: $plate-ui-background;
     -webkit-transition: .4s;
     transition: .4s;
   }

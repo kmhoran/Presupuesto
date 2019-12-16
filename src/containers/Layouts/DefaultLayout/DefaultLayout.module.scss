@@ -1,14 +1,17 @@
 
+
 .body{
     display: flex;
     flex-direction: row;
     height: calc(100vh - 50px);
-    width: 100vw;
+    width: calc(100vw - 10px);
 }
 .menuLeft{
     height: 100%;
 }
 .content{
-    flex: 1;
+    // flex: 1;
+    width: 80%;
     height: 100%;
+    position: relative;
 }
