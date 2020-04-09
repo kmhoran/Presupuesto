@@ -1,6 +1,11 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Presuuesto
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) (CRA).
 
-## Available Scripts
+Boilerplate CRA scripts can be found below.
+
+Presupuesto is a front-end client for the Budget_V2 API.
+
+## Create React App Scripts
 
 In the project directory, you can run:
 
